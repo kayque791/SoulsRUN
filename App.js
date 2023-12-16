@@ -56,7 +56,7 @@ const HomeScreen = ({ navigation }) => {
     }
   };
 
-  const calcularFinanciamento = () => {
+  const novaLinha = () => {
     try {
       const novoResultado = { nome, valor: parseFloat(valorPrimario) };
 
@@ -162,7 +162,7 @@ const HomeScreen = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={calcularFinanciamento}
+        onPress={novaLinha}
       >
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
